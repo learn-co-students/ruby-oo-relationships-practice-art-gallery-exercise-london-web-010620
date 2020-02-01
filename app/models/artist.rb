@@ -34,9 +34,7 @@ class Artist
 
   def self.total_experience
     #we can use here @@all., Artist. or self.
-    all_years_experience = @@all.map do |artist|
-      artist.years_experience
-    end
+    all_years_experience = @@all.map { |artist| artist.years_experience }
     all_years_experience.sum
   end 
 
